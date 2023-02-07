@@ -1,0 +1,48 @@
+@media (min-width: 1280px){
+  .outbodycontain{
+    /* border: 1px solid blue; */
+    height: 1000px;
+    width:1880px;
+    margin: 10px;
+  }
+  .navscontain{
+    border: 1px solid blue;
+    width: 1895px;
+    height: 250px;
+  }
+  .topnav{
+    /* border: 1px solid purple; */
+    margin:10px;
+    display:flex;
+    flex-direction: row;
+  }
+  .topnav h1{
+    /* border: 1px solid brown; */
+    position: relative;
+    left: 230px;
+    top: 11px;
+  }
+  .topnav a{
+    /* border: 1px solid brown; */
+    position: relative;
+    left:1370px;
+    top: 47px;
+    height:30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px
+  }
+  .navlinks{
+    /* border: 1px solid blue; */
+    margin-top: 60px;
+    height: 3vh;
+    padding-top: 17px;
+    background-color: black;
+  }
+  .navlinks a{
+    position: relative;
+    left:950px;
+    margin:50px;
+    color: white;
+  }
+}
