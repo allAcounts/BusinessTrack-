@@ -1,10 +1,12 @@
-import reactLogo from './assets/react.svg'
-import NavBar from './navbar/NavBar'
+import Home from './pages/Home'
+import Layout from './Layout'
 
 function App() {
   return (
     <div className="outbodycontain">
-      <NavBar/>
+    <Layout>
+      <Home/>
+    </Layout>
     </div>
   )
 }
