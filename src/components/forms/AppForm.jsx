@@ -1,14 +1,20 @@
 import React from 'react';
 import SubmitButton from '../buttons/SubmitButton';
+import EmailInput from '../inputs/EmailInput';
+import PasswordInput from '../inputs/PasswordInput';
 import TextInput from '../inputs/TextInput';
 
 const AppForm = ({ handleSubmitCb, inputConfig }) => 
   <form onSubmit={handleSubmitCb}>
     {inputConfig.map((config) => {
       if (config.type === 'text') {
-        return <TextInput inputOptions={config} />
+        return <TextInput key={config.id} inputOptions={config} />
       } else if (config.type === 'password') {
-        return 
+        return <PasswordInput key={config.id} inputOptions={config} />
+      } else if (config.type === 'email') {
+        return <EmailInput key={config.id} inputOptions={config} />
+      } else {
+        return null
       }
     })}
     <SubmitButton btnLabel='submit' />
