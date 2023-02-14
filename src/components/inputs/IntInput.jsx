@@ -1,6 +1,6 @@
 import React from "react";
 
-const IntInput = ({ inputValue, inputName, handleChangeCb }) => 
+const IntInput = ({ inputOptions: { inputValue, inputName, handleChangeCb } }) => 
   <input 
     type='number'  
     name={inputName}

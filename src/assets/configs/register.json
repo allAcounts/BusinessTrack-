@@ -2,16 +2,19 @@
   {
     "id": 0,
     "type": "text",
+    "placeholder": "Enter username...",
     "name": "username"
   },
   {
     "id": 1,
     "type": "password",
+    "placeholder": "Enter password...",
     "name": "password"
   },
   {
     "id": 2,
     "type": "email",
+    "placeholder": "Enter email...",
     "name": "email"
   }
 ]

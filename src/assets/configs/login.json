@@ -2,11 +2,13 @@
   {
     "id": 0,
     "type": "text",
+    "placeholder": "Enter username...",
     "name": "username"
   },
   {
     "id": 1,
     "type": "password",
+    "placeholder": "Enter password...",
     "name": "password"
   }
 ]

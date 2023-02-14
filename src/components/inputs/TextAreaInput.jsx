@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextAreaInput = ({ inputValue, inputName, inputPlaceholder, handleChangeCb }) => 
+const TextAreaInput = ({ inputOptions: { inputValue, inputName, inputPlaceholder, handleChangeCb } }) => 
   <textarea
     name={inputName}
     value={inputValue}
