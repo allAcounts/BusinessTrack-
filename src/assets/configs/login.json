@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "type": "text",
+    "inputPlaceholder": "Enter username...",
+    "inputName": "username"
+  },
+  {
+    "id": 1,
+    "type": "password",
+    "inputPlaceholder": "Enter password...",
+    "inputName": "password"
+  }
+]
