@@ -1,0 +1,43 @@
+@media (min-width: 1280px){
+#home-content{
+  /* border: 1px solid dodgerblue; */
+  width: 50em;
+  margin-left: 7em;
+  margin-top: 5em;
+  height: 35em;
+}
+
+#home-content h1{
+  margin: 50px 0 20px 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 79px;
+  text-align: left;
+}
+
+#home-content h2{
+
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left:18px;
+}
+
+.buttons-container{
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.image-container{
+  border: 1px solid red;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 900px;
+  bottom: 500px;
+}
+}
