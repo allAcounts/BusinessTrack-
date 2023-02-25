@@ -1,14 +1,16 @@
 [
   {
     "id": 0,
-    "type": "text",
-    "inputPlaceholder": "Enter username...",
-    "inputName": "username"
+    "type": "email",
+    "inputPlaceholder": "Enter email",
+    "inputName": "email",
+    "inputLabel": "email"
   },
   {
     "id": 1,
     "type": "password",
     "inputPlaceholder": "Enter password...",
-    "inputName": "password"
+    "inputName": "password",
+    "inputLabel": "password"
   }
 ]
