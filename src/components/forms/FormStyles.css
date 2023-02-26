@@ -1,0 +1,15 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form button {
+  background-color: blue;
+  color: white;
+  text-transform: capitalize;
+}
+
+.auth-form input {
+  padding: 1rem;
+}

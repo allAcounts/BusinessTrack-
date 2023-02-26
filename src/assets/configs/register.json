@@ -2,14 +2,14 @@
   {
     "id": 0,
     "type": "text",
-    "inputPlaceholder": "Enter full name",
+    "inputPlaceholder": "Enter your full name",
     "inputName": "name",
     "inputLabel": "full name"
   },
   {
     "id": 1,
     "type": "email",
-    "inputPlaceholder": "Enter email",
+    "inputPlaceholder": "Enter your email address",
     "inputName": "email",
     "inputLabel": "email"
 
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "type": "password",
-    "inputPlaceholder": "Enter password",
+    "inputPlaceholder": "Create a password",
     "inputName": "password",
     "inputLabel": "password"
   },
@@ -25,7 +25,7 @@
     "id": 3,
     "type": "password",
     "inputPlaceholder": "Re-enter password",
-    "inputName": "password",
-    "inputLabel": "password"
+    "inputName": "confirmPassword",
+    "inputLabel": "confirm password"
   }
 ]

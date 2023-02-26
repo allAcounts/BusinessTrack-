@@ -1,5 +1,6 @@
 import Home from './pages/Home'
 import Layout from './Layout'
+import "./App.css"
 
 function App() {
   return (

@@ -18,7 +18,7 @@ const Register = ({ setShouldRenderRegister }) => {
   };
   const inputConfig = registerJson.map((item) => ({ ...item, handleChangeCb: handleChange, inputValue: user[item.name] }));
   return(
-    <AppForm handleSubmitCb={handleSubmit} inputConfig={inputConfig} />
+    <AppForm handleSubmitCb={handleSubmit} inputConfig={inputConfig} classname={'auth-form'} submitLabel={'create account'} />
   )
 }
 
