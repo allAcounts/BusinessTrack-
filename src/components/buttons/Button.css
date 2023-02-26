@@ -1,9 +1,7 @@
-.home-page-btn {
+button {
   width: 448px;
   height: 52px;
   margin: 10px;
-  color: #fff;
-  background-color: dodgerblue;
   display:flex;
   align-items: center;
   cursor: pointer;
@@ -11,5 +9,16 @@
   justify-content: center;
   font-family: 'Roboto Slab', serif;
   border-radius:10px;
-  border-color:#2196F3;
+  border: 2px solid dodgerblue;
+  text-transform: capitalize;
+}
+
+.primary {
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.secondary {
+  color: dodgerblue;
+  background-color: white;
 }
