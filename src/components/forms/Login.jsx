@@ -16,7 +16,7 @@ const Login = ({ setShouldRenderLogin }) => {
   };
   const inputConfig = loginJson.map((item) => ({ ...item, handleChangeCb: handleChange, inputValue: user[item.name] }));
   return(
-    <AppForm handleSubmitCb={handleSubmit} inputConfig={inputConfig} />
+    <AppForm handleSubmitCb={handleSubmit} inputConfig={inputConfig} classname={'auth-form'} submitLabel={'login'} />
   )
 }
 
