@@ -3,16 +3,15 @@ import { createContext, useState } from "react";
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
-  const [shouldRenderLogin, setShouldRenderLogin] = useState(false);
-  const [shouldRenderRegister, setShouldRenderRegister] = useState(false);
+  const [user, setUser] = useState({
+    email: '',
+    id: 0,
+  });
 
-  const renderLoginForm = () => setShouldRenderLogin(true);
-  const hideLoginForm = () => setShouldRenderLogin(false);
-  const renderRegisterForm = () => setShouldRenderRegister(true);
-  const hideRegisterForm = () => setShouldRenderRegister(false);
+  loginUser = (userEmail, userId) => setUser({ email: userEmail, id: userId });
 
   return(
-    <AuthContext.Provider value={{ shouldRenderLogin, shouldRenderRegister, renderLoginForm, renderRegisterForm, hideLoginForm, hideRegisterForm }}>
+    <AuthContext.Provider value={{ user, loginUser }}>
       {children}
     </AuthContext.Provider>
   )
