@@ -1,7 +1,7 @@
 import React from "react";
 import "./InputStyles.css";
 
-const TextInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder, inputLabel, handleChangeCb } }) => 
+const TextInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder, inputLabel, handleChangeCb, handleBlurCb } }) => 
   <div className="col">
     <label className="app-label">{inputLabel}</label>
     <input 
@@ -9,6 +9,7 @@ const TextInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder, in
       value={inputValue}
       placeholder={inputPlaceholder}
       onChange={handleChangeCb}
+      onBlur={handleBlurCb}
     />
   </div>
 
