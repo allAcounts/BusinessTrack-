@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import AppForm from './AppForm';
 import loginJson from '../../assets/configs/login.json';
+import * as controller from '../../controllers/authController.js';
 
 const Login = ({ setShouldRenderLogin }) => {
   const [user, setUser] = useState({
@@ -11,7 +12,7 @@ const Login = ({ setShouldRenderLogin }) => {
   const handleChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('User submitted.', user);
+    controller.loginUser(user);
     setShouldRenderLogin(false);
   };
   const inputConfig = loginJson.map((item) => ({ ...item, handleChangeCb: handleChange, inputValue: user[item.name] }));

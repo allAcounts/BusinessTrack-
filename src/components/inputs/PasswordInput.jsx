@@ -1,7 +1,7 @@
 import React from "react";
 import "./InputStyles.css";
 
-const PasswordInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder, inputLabel, handleChangeCb } }) => 
+const PasswordInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder, inputLabel, handleChangeCb, handleBlurCb } }) => 
   <div className="col">
     <label className="app-label">{inputLabel}</label>
     <input 
@@ -10,6 +10,7 @@ const PasswordInput = ({ inputOptions: { inputName, inputValue, inputPlaceholder
       value={inputValue}
       placeholder={inputPlaceholder}
       onChange={handleChangeCb}
+      onBlur={handleBlurCb}
     />
   </div>
 

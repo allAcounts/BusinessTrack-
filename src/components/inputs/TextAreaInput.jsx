@@ -1,7 +1,7 @@
 import React from "react";
 import "./InputStyles.css";
 
-const TextAreaInput = ({ inputOptions: { inputValue, inputName, inputPlaceholder, inputLabel, handleChangeCb } }) => 
+const TextAreaInput = ({ inputOptions: { inputValue, inputName, inputPlaceholder, inputLabel, handleChangeCb, handleBlurCb } }) => 
   <div className="col">
     <label className="app-label">{inputLabel}</label>
     <textarea
@@ -9,6 +9,7 @@ const TextAreaInput = ({ inputOptions: { inputValue, inputName, inputPlaceholder
       value={inputValue}
       placeholder={inputPlaceholder}
       onChange={handleChangeCb}
+      onBlur={handleBlurCb}
     />
   </div>
 

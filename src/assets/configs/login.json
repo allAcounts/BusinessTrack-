@@ -4,7 +4,8 @@
     "type": "email",
     "inputPlaceholder": "Enter email",
     "inputName": "email",
-    "inputLabel": "email"
+    "inputLabel": "email",
+    "lengthRequirement": 8
   },
   {
     "id": 1,
