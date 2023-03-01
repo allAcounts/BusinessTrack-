@@ -2,20 +2,18 @@ import usersJson from "../assets/configs/sampleUsers.json";
 import * as funcs from '../utils/functions/arrays.js';
 
 export const loginUser = (user) => {
-  const appUser = funcs.findArrayObject(usersJson, "id", user.email);
-  console.log(appUser)
-  if (appUser) {
-    console.log(appUser)
+  const appUser = funcs.findArrayObject(usersJson, "email", user.email);
+  if (appUser && appUser.password === user.password) {
     return appUser;
   } else {
-    // error message
+    return false;
   }
 };
 
 export const registerUser = (user) => {
-  const appUser = funcs.findArrayObject(usersJson, "id", user.email);
+  const appUser = funcs.findArrayObject(usersJson, "email", user.email);
   if (appUser) {
-    // error message
+    return false;
   } else {
     // success message
   }
