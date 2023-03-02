@@ -6,11 +6,12 @@ import AuthContext from "../utils/contexts/AuthContext";
 import './home.css';
 
 const Home = () => {
-  const { user } = useContext(AuthContext);
+  const context = useContext(AuthContext);
+  const user = context?.user;
   const [shouldRenderLogin, setShouldRenderLogin] = useState(false);
   const [shouldRenderRegister, setShouldRenderRegister] = useState(false);
   
-  // console.log('user ', user);
+  console.log('user ', user);
   return (
     <section id='home-content'>
       {shouldRenderLogin ?
